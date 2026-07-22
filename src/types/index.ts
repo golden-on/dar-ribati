@@ -42,3 +42,10 @@ export interface Room {
     booking?: string;
   };
 }
+
+// --- Synchronisation de calendrier (iCal) ---
+export interface CalendarSyncResponse {
+  roomId: RoomId;
+  lastUpdated: string;
+  bookedDates: string[];
+}
